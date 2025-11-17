@@ -777,7 +777,40 @@
 "lng":124.90126596705372 ,
 "locationType":"Gas Station"
 }
+,
 
+
+{
+"title":"Golden Bliss Inn",
+"description":"Dahilayan, Manolo Fortich",
+"img":"https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=9Mkse_1kcgiQYpncmHEalw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=76.92538&pitch=0&thumbfov=100",
+"lat":8.217434171211387, 
+"lng":124.85244248831695  ,
+"locationType":"Hotel"
+}
+,
+
+
+{
+"title":"Migo's Inn",
+"description":"Dahilayan, Manolo Fortich",
+"img":"https://lh3.googleusercontent.com/p/AF1QipPznF3sa9gW9MY2dMLZ0VUwpUqg1CpSYDXIqH0F=w408-h306-k-no",
+"lat":8.217430199725209, 
+"lng": 124.85204431277816,
+"locationType":"Hotel"
+}
+
+,
+
+
+{
+"title":"Dahilayan De Eleganz Place",
+"description":"Dahilayan, Manolo Fortich",
+"img":"https://lh3.googleusercontent.com/p/AF1QipO8-_7I7fwT-raZFhejR3E9F8VId78aJZ46esOH=w408-h544-k-no",
+"lat":8.247762145134551, 
+"lng": 124.83686579696162,
+"locationType":"Hotel"
+}
 
 
 
