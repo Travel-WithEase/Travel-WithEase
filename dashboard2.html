@@ -50,87 +50,18 @@ openStreetMap.addTo(map);
 console.log("Base map tile layer loaded" + Date());
 
 
-
-
-//icons 
-var Gas = L.icon({
-    iconUrl: 'gas.png',
-
-    iconSize:     [38, 95], // size of the icon
-    shadowSize:   [50, 64], // size of the shadow
-    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-    shadowAnchor: [4, 62],  // the same for the shadow
-    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-});
-var Hospi = L.icon({
-    iconUrl: 'hospital.png',
-
-    iconSize:     [38, 95], // size of the icon
-    shadowSize:   [50, 64], // size of the shadow
-    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-    shadowAnchor: [4, 62],  // the same for the shadow
-    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-});
-var Conve = L.icon({
-    iconUrl: 'store.png',
-
-    iconSize:     [38, 95], // size of the icon
-    shadowSize:   [50, 64], // size of the shadow
-    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-    shadowAnchor: [4, 62],  // the same for the shadow
-    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-});
-var Restau = L.icon({
-    iconUrl: 'restaurant.png',
-
-    iconSize:     [38, 95], // size of the icon
-    shadowSize:   [50, 64], // size of the shadow
-    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-    shadowAnchor: [4, 62],  // the same for the shadow
-    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-});
-var Telho = L.icon({
-    iconUrl: 'hotel.png',
-
-    iconSize:     [38, 95], // size of the icon
-    shadowSize:   [50, 64], // size of the shadow
-    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-    shadowAnchor: [4, 62],  // the same for the shadow
-    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-});
-
-
-
-
-
 const markerGroups ={};
+
 
 fetch(mapDataUrl)
     .then(response => response.json())
     .then(data =>{
-        data.forEach(pin =>{
+         data.forEach(pin =>{
             const type = pin.locationType || "Other";
 
             if(!markerGroups[type]) {
                 markerGroups[type] = L.layerGroup();
             }
-            const marker = L.marker([pin.lat, pin.lng]).addTo(map);
-            let selectedIcon;
-
-
-if (pin.locationType === "Gas Station") {
-    selectedIcon = Gas;
-} 
-else if (pin.locationType === "Hotel") {
-    selectedIcon = Telho;
-}else if (pin.locationType === "Restaurant") {
-    selectedIcon = Restau;
-}else if (pin.locationType === "Convenience Store") {
-    selectedIcon = Conve;
-}
-else {
-    selectedIcon = Hospi;
-}
 
        const marker = L.marker([pin.lat, pin.lng], { icon: redIcon }).addTo(map);
             const img = `<img src='${pin.img}' class="popup-image">`;
