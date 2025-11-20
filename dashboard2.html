@@ -51,18 +51,6 @@ console.log("Base map tile layer loaded" + Date());
 
 const markerGroups ={};
 
-
-
-var redIcon = L.icon({
-    iconUrl: 'https://cdn-icons-png.flaticon.com/512/9922/9922103.png',
-    shadowUrl: 'leaf-shadow.png',
-
-    iconSize:     [38, 95], // size of the icon
-    shadowSize:   [50, 64], // size of the shadow
-    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-    shadowAnchor: [4, 62],  // the same for the shadow
-    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-});
 fetch(mapDataUrl)
     .then(response => response.json())
     .then(data =>{
@@ -72,24 +60,7 @@ fetch(mapDataUrl)
             if(!markerGroups[type]) {
                 markerGroups[type] = L.layerGroup();
             }
-            let selectedIcon;
-
-
-if (pin.locationType === "Hospital") {
-    selectedIcon = greenIcon;
-} 
-else if (pin.locationType === "Gas Station") {
-    selectedIcon = redIcon;
-}else if (pin.locationType === "Restaurant") {
-    selectedIcon = redIcon;
-}else if (pin.locationType === "Convenience Store") {
-    selectedIcon = redIcon;
-}
-else {
-    selectedIcon = redIcon;
-}
-
-       const marker = L.marker([pin.lat, pin.lng], { icon: redIcon }).addTo(map);
+            const marker = L.marker([pin.lat, pin.lng]).addTo(map);
             const img = `<img src='${pin.img}' class="popup-image">`;
             marker.bindPopup(`${img}<br><b> ${pin.title} </b><br> ${pin.description}<br> ${pin.locationType}`);
             console.log(`${pin.name} Loaded` +Date());
