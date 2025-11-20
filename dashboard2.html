@@ -51,7 +51,37 @@ console.log("Base map tile layer loaded" + Date());
 
 
 const markerGroups ={};
-
+ 
+const GAS = L.icon ({
+iconUrl: 'icons/gas.png',
+iconSize: [38, 38],
+iconAnchor: [19,38],
+popupAnchor:[0,-38]
+});
+const CONVE = L.icon ({
+iconUrl: 'icons/store.png',
+iconSize: [38, 38],
+iconAnchor: [19,38],
+popupAnchor:[0,-38]
+});
+const HOSPI = L.icon ({
+iconUrl: 'icons/hospital.png',
+iconSize: [38, 38],
+iconAnchor: [19,38],
+popupAnchor:[0,-38]
+});
+const RESTAU = L.icon ({
+iconUrl: 'icons/restaurant.png',
+iconSize: [38, 38],
+iconAnchor: [19,38],
+popupAnchor:[0,-38]
+});
+const HOTEL = L.icon ({
+iconUrl: 'icons/hotel.png',
+iconSize: [38, 38],
+iconAnchor: [19,38],
+popupAnchor:[0,-38]
+});
 
 fetch(mapDataUrl)
     .then(response => response.json())
@@ -62,10 +92,24 @@ fetch(mapDataUrl)
             if(!markerGroups[type]) {
                 markerGroups[type] = L.layerGroup();
             }
+           let selectedIcon;
 
-       const marker = L.marker([pin.lat, pin.lng], { icon: redIcon }).addTo(map);
+
+if (pin.locationType === "Gas Station") {
+    selectedIcon = GAS;
+} else if (pin.locationType === "Convenience Store"){
+    selectedIcon =CONVE;
+    } else if (pin.locationType === "Hospital"){
+    selectedIcon =HOSPI;
+    } else if (pin.locationType === "Restaurant"){
+    selectedIcon =RESTAU;
+} else {
+    selectedIcon =HOTEL;
+}
+
+       const marker = L.marker([pin.lat, pin.lng], { icon: selectedIcon }).addTo(map);
             const img = `<img src='${pin.img}' class="popup-image">`;
-            marker.bindPopup(`${img}<br><b> ${pin.title} </b><br> ${pin.description}<br> ${pin.locationType}`);
+            marker.bindPopup(`${img}<br><b> ${pin.title} </b><br> ${pin.description}<br> ${pin.locationType}<br>${pin.rating}`);
             console.log(`${pin.name} Loaded` +Date());
 
             markerGroups[type].addLayer(marker);
