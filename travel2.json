@@ -1,5 +1,6 @@
 [
     {
+    "id":"1",
 "title":"7/11",
 "rating" : "Rating: ★★★★⯪ (4.5)",
 "description":"Tankulan, Manolo Fortich",
@@ -11,6 +12,7 @@
 
 
 {
+    "id":"2",
 "title":"BCC  Bukidnon Community Cooperaative",
 "rating" : "Rating: ★★★★✰ (4.0)",
 "description":"Camp Phillips, Agusan Canyon",
@@ -22,6 +24,7 @@
 
 
 {
+    "id":"3",
 "title":"Pine Coop Store",
 "rating" : "Rating: ★★★★✰ (4.0)",
 "description":"Camp Phillips, Agusan Canyon",
@@ -33,6 +36,7 @@
 
 
 {
+    "id":"4",
 "title":"Dearbc Maxi Stop",
 "rating" : "Rating: Unrated",
 "description":"Camp Phillips, Agusan Canyon",
@@ -44,6 +48,7 @@
 
 
 {
+    "id":"5",
 "title":"7/11",
 "rating" : "Rating: ★★★★⯪ (4.5)",
 "description":"Damilag, Manolo Fortich",
@@ -55,6 +60,7 @@
 
 
 {
+    "id":"6",
 "title":"CK Mart",
 "rating" : "Rating: ★★★★★ (5.0)",
 "description":"Tankulan, Manolo Fortich",
@@ -66,6 +72,7 @@
 
 
 {
+    "id":"7",
 "title":"Mom and Pap's",
 "rating" : "Rating: ★★★⯪✰ (3.5)",
 "description":"Joseph Village Barangay, Manolo Fortich",
@@ -77,6 +84,7 @@
 
 
 {
+    "id":"8",
 "title":"Save Mart",
 "rating" : "Rating: ★★★★⯪ (4.3)",
 "description":"Damilag, Manolo Fortich",
@@ -88,6 +96,7 @@
 
 
 {
+    "id":"9",
 "title":"Bukidnon Provincial Hospital",
 "rating" :"Rating: ★★★⯪✰ (3.6)" ,
 "description":"San Miguel, Manolo Fortich",
@@ -99,6 +108,7 @@
 
 
 {
+    "id":"10",
 "title":"Phillips Memorial Hospital",
 "rating" :"Rating: ★★★⯪✰ (3.6)" ,
 "description":"Camp Phillips, Agusan Canyon",
@@ -110,6 +120,7 @@
 
 
 {
+    "id":"11",
 "title":"Rural Health Center",
 "rating" :"Rating: ★★★★★ (5.0)" ,
 "description":"Manolo Fortich",
@@ -121,6 +132,7 @@
 
 
 {
+    "id":"12",
 "title":"Mission Buenaventure Care Family Clinic",
 "rating" :"Rating: ★★★✰✰ (3.0)" ,
 "description":"Damilag, Manolo Fortich",
@@ -132,6 +144,7 @@
 
 
 {
+    "id":"13",
 "title":"Tankulan Medical Clinic",
 "rating" :"Rating: Unrated" ,
 "description":"Tankulan, Manolo Fortich",
@@ -143,6 +156,7 @@
 
 
 {
+    "id":"14",
 "title":"The Bungalow",
 "rating" :"Rating: ★★★★⯪ (4.5)" ,
 "description":"Camp Phillips, Agusan Canyon",
@@ -154,6 +168,7 @@
 
 
 {
+    "id":"15",
 "title":"Del Monte Clubhouse",
 "rating" :"Rating: ★★★★⯪ (4.3)" ,
 "description":"Camp Phillips, Agusan Canyon",
@@ -165,6 +180,7 @@
 
 
 {
+    "id":"16",
 "title":"Totsie's Restaurant",
 "rating" :"Rating: ★★★★⯪ (4.4)" ,
 "description":"San Miguel, Manolo Fortich",
@@ -176,6 +192,7 @@
 
 
 {
+    "id":"17",
 "title":"Farmhouse Eatery by Montegelo",
 "rating" :"Rating: ★★★★⯪ (4.3)" ,
 "description":"San Miguel, Manolo Fortich",
@@ -187,6 +204,7 @@
 
 
 {
+    "id":"18",
 "title":"Maena's Grill",
 "rating" :"Rating: ★★★★⯪ (4.4)" ,
 "description":"Tankulan, Manolo Fortich",
@@ -198,6 +216,7 @@
 
 
 {
+    "id":"19",
 "title":"Chop Chop Manolo",
 "rating" :"Rating: ★★★★⯪ (4.9)" ,
 "description":"Camp Phillips, Agusan Canyon",
@@ -209,6 +228,7 @@
 
 
 {
+    "id":"20",
 "title":"Mr. Wok Eatery",
 "rating" :"Rating: ★★★★⯪ (4.1)" ,
 "description":"Tankulan, Manolo Fortich",
@@ -220,6 +240,7 @@
 
 
 {
+    "id":"21",
 "title":"Smokehouse Resto",
 "rating" :"Rating: ★★★★★ (5.0)" ,
 "description":"Diclum, Manolo Fortich",
@@ -231,6 +252,7 @@
 
 
 {
+    "id":"22",
 "title":"Jollibee",
 "rating" :"Rating: ★★★★⯪ (4.2)" ,
 "description":"Tankulan, Manolo Fortich",
@@ -242,6 +264,7 @@
 
 
 {
+    "id":"23",
 "title":"Ricardo's by Cucina Higala",
 "rating" :"Rating: ★★★★⯪ (4.6)" ,
 "description":"Dahilayan, Manolo Fortich",
@@ -253,6 +276,7 @@
 
 
 {
+    "id":"24",
 "title":"Pinutos sa Kanto",
 "rating" :"Rating: ★★★★⯪ (4.1)" ,
 "description":"San Miguel, Manolo Fortich",
@@ -264,6 +288,7 @@
 
 
 {
+    "id":"25",
 "title":"Rey's Warehouse",
 "rating" :"Rating: ★★★★⯪ (4.6)" ,
 "description":"Damilag, Manolo Fortich",
@@ -275,6 +300,7 @@
 
 
 {
+    "id":"26",
 "title":"Matthew's Restobar",
 "rating" :"Rating: ★★★⯪✰ (3.8)" ,
 "description":"Diclum, Manolo Fortich",
@@ -286,6 +312,7 @@
 
 
 {
+    "id":"27",
 "title":"Lady's 1st",
 "rating" :"Rating: ★★★★⯪ (4.5)" ,
 "description":"Camp Phillips, Agusan Canyon",
@@ -297,6 +324,7 @@
 
 
 {
+    "id":"28",
 "title":"Baelly's Lechon House",
 "rating" :"Rating: ★★★★⯪ (4.3)" ,
 "description":"Damilag, Manolo Fortich",
@@ -308,6 +336,7 @@
 
 
 {
+    "id":"29",
 "title":"4J Restaurant",
 "rating" :"Rating: ★★★⯪✰ (3.7)" ,
 "description":"Tankulan, Manolo Fortich",
@@ -319,6 +348,7 @@
 
 
 {
+    "id":"30",
 "title":"Sonsona Eatery",
 "rating" :"Rating: ★★★★⯪ (4.7)" ,
 "description":"Tankulan, Manolo Fortich",
@@ -330,6 +360,7 @@
 
 
 {
+    "id":"31",
 "title":"Kervin's Foodhouse",
 "rating" :"Rating: Unrated" ,
 "description":"Damilag, Manolo Fortich",
@@ -341,6 +372,7 @@
 
 
 {
+    "id":"32",
 "title":"RRJ Eatery",
 "rating" :"Rating: ★★★★★ (5.0)" ,
 "description":"Damilag, Manolo Fortich",
@@ -352,6 +384,7 @@
 
 
 {
+    "id":"33",
 "title":"Jimboy's Kambingan",
 "rating" :"Rating: ★★★★⯪ (4.4)" ,
 "description":"San Miguel, Manolo Fortich",
@@ -363,6 +396,7 @@
 
 
 {
+    "id":"34",
 "title":"RRJ'S FOOD HAUS",
 "rating" :"Rating: ★★★★★ (5.0)" ,
 "description":"Alae, Manolo Fortich",
@@ -374,6 +408,7 @@
 
 
 {
+    "id":"35",
 "title":"Villatuna - Manolo Fortich",
 "rating" :"Rating: ★★★★✰ (4.0)" ,
 "description":"Tankulan, Manolo Fortich",
@@ -385,6 +420,7 @@
 
 
 {
+    "id":"36",
 "title":"Villatuna - Damilag",
 "rating" :"Rating: ★★★★⯪ (4.7)" ,
 "description":"Damilag, Manolo Fortich",
@@ -396,6 +432,7 @@
 
 
 {
+    "id":"37",
 "title":"Matt & Maxx Baroto Diner",
 "rating" :"Rating: ★★★★★ (5.0)" ,
 "description":"Tankulan, Manolo Fortich",
@@ -407,6 +444,7 @@
 
 
 {
+    "id":"38",
 "title":"Beer Hub",
 "rating" :"Rating: ★★★★★ (5.0)" ,
 "description":"Kalanawan, Manolo Fortich",
@@ -418,6 +456,7 @@
 
 
 {
+    "id":"39",
 "title":"SJ Diner",
 "rating" :"Rating: ★★★★⯪ (4.1)" ,
 "description":"Dahilayan, Manolo Fortich",
@@ -429,6 +468,7 @@
 
 
 {
+    "id":"40",
 "title":"Dahilayan Pizza Shack",
 "rating" :"Rating: ★★★★⯪ (4.8)" ,
 "description":"Dahilayan, Manolo Fortich",
@@ -440,6 +480,7 @@
 
 
 {
+    "id":"41",
 "title":"Pizzakid Manolo Fortich",
 "rating" :"Rating: ★★★★★ (5.0)" ,
 "description":"Kihare, Manolo Fortich",
@@ -451,6 +492,7 @@
 
 
 {
+    "id":"42",
 "title":"Jessie's Diner",
 "rating" :"Rating: ★★★★⯪ (4.4)" ,
 "description":"Dahilayan, Manolo Fortich",
@@ -462,6 +504,7 @@
 
 
 {
+    "id":"43",
 "title":"Fil N Pak",
 "rating" :"Rating: ★★★★⯪ (4.6)" ,
 "description":"Tankulan, Manolo Fortich",
@@ -473,6 +516,7 @@
 
 
 {
+    "id":"44",
 "title":"JE's Tuna at Lutong Bahay",
 "rating" :"Rating: ★★★⯪✰ (3.5)" ,
 "description":"Tankulan, Manolo Fortich",
@@ -484,6 +528,7 @@
 
 
 {
+    "id":"45",
 "title":"Stone House Station",
 "rating" :"Rating: ★★★★⯪ (4.3)" ,
 "description":"Dahilayan, Manolo Fortich",
@@ -495,6 +540,7 @@
 
 
 {
+    "id":"46",
 "title":"Antonios Cafe",
 "rating" :"Rating: ★★★★⯪ (4.5)" ,
 "description":"Dahilayan, Manolo Fortich",
@@ -506,6 +552,7 @@
 
 
 {
+    "id":"47",
 "title":"Nang Ka Tasa",
 "rating" :"Rating: ★★★★⯪ (4.4)" ,
 "description":"Dahilayan, Manolo Fortich",
@@ -517,6 +564,7 @@
 
 
 {
+    "id":"48",
 "title":"Forest Cafe",
 "rating" :"Rating: ★★★⯪✰ (3.4)" ,
 "description":"Dahilayan, Manolo Fortich",
@@ -528,6 +576,7 @@
 
 
 {
+    "id":"49",
 "title":"Allegra's Cafe and Resto Bar",
 "rating" :"Rating: ★★★★⯪ (4.1)" ,
 "description":"Dahilayan, Manolo Fortich",
@@ -539,6 +588,7 @@
 
 
 {
+    "id":"50",
 "title":"Fren's Asian Bistro",
 "rating" :"Rating: ★★★★⯪ (4.5)" ,
 "description":"Dahilayan, Manolo Fortich",
@@ -550,6 +600,7 @@
 
 
 {
+    "id":"51",
 "title":"Vonchok Kabkaban",
 "rating" :"Rating: Unrated" ,
 "description":"Diclum, Manolo Fortich",
@@ -561,6 +612,7 @@
 
 
 {
+    "id":"52",
 "title":"Dream Golftel",
 "rating" :"Rating: ★★★★✰ (4.0)" ,
 "description":"Camp Phillips, Agusan Canyon",
@@ -572,6 +624,7 @@
 
 
 {
+    "id":"53",
 "title":"The Eliana Farm Resort & Villas Bukidnon",
 "rating" :"Rating: ★★★★⯪ (4.1)" ,
 "description":"Diclum, Manolo Fortich",
@@ -583,6 +636,7 @@
 
 
 {
+    "id":"54",
 "title":"Jo's Travelers Inn",
 "rating" :"Rating: ★★★★✰ (4.0)" ,
 "description":"Kihare, Manolo Fortich",
@@ -594,6 +648,7 @@
 
 
 {
+    "id":"55",
 "title":"Dahilayan BHL Tourist Inn",
 "rating" :"Rating: ★★★★⯪ (4.9)" ,
 "description":"Dahilayan, Manolo Fortich",
@@ -605,6 +660,7 @@
 
 
 {
+    "id":"56",
 "title":"Saddle Ridge Camp",
 "rating" :"Rating: ★★★★⯪ (4.2)" ,
 "description":"Dahilayan, Manolo Fortich",
@@ -616,6 +672,7 @@
 
 
 {
+    "id":"57",
 "title":"Julia's Villa Bukidnon",
 "rating" :"Rating: ★★★★★ (5.0)" ,
 "description":"Alae, Manolo Fortich",
@@ -627,6 +684,7 @@
 
 
 {
+    "id":"58",
 "title":"Bukidnon Country Lodge",
 "rating" :"Rating: ★★★★⯪ (4.3)" ,
 "description":"Camp Phillips, Agusan Canyon",
@@ -638,6 +696,7 @@
 
 
 {
+    "id":"59",
 "title":"Asaka Traveller's Inn",
 "rating" :"Rating: ★★★★⯪ (4.3)" ,
 "description":"Dahilayan, Manolo Fortich",
@@ -649,6 +708,7 @@
 
 
 {
+    "id":"60",
 "title":"Alina Farm Resort Bukidnon",
 "rating" :"Rating: ★★★★★ (5.0)" ,
 "description":"Dalirig, Manolo Fortich",
@@ -660,6 +720,7 @@
 
 
 {
+    "id":"61",
 "title":"Dahilayan Alpine Village",
 "rating" :"Rating: ★★★★⯪ (4.5)" ,
 "description":"Dahilayan, Manolo Fortich",
@@ -671,6 +732,7 @@
 
 
 {
+    "id":"62",
 "title":"Dahilayan Forest Park Resort",
 "rating" :"Rating: ★★★★⯪ (4.6)" ,
 "description":"Dahilayan, Manolo Fortich",
@@ -682,6 +744,7 @@
 
 
 {
+    "id":"63",
 "title":"Eunice Villa and Cabins",
 "rating" :"Rating: ★★★★★ (5.0)" ,
 "description":"Damilag, Manolo Fortich",
@@ -693,6 +756,7 @@
 
 
 {
+    "id":"64",
 "title":"Concetta Inn",
 "rating" :"Rating: ★★★★⯪ (4.9)" ,
 "description":"Damilag, Manolo Fortich",
@@ -704,6 +768,7 @@
 
 
 {
+    "id":"65",
 "title":"The Prince Haven",
 "rating" :"Rating: Unrated" ,
 "description":"Damilag, Manolo Fortich",
@@ -715,6 +780,7 @@
 
 
 {
+    "id":"66",
 "title":"Shell",
 "rating" :"Rating: ★★★⯪✰ (3.8)" ,
 "description":"Damilag, Manolo Fortich",
@@ -726,6 +792,7 @@
 
 
 {
+    "id":"67",
 "title":"Colex",
 "rating" :"Rating: ★★★★⯪ (4.3)" ,
 "description":"Sayre Hwy, Manolo Fortich",
@@ -737,6 +804,7 @@
 
 
 {
+    "id":"68",
 "title":"RM C Petrol",
 "rating" :"Rating: ★★★★✰ (4.0)" ,
 "description":"Sayre Hwy, Manolo Fortich",
@@ -748,6 +816,7 @@
 
 
 {
+    "id":"69",
 "title":"Caltex",
 "rating" :"Rating: ★★★★⯪ (4.2)" ,
 "description":"Tankulan, Manolo Fortich",
@@ -759,6 +828,7 @@
 
 
 {
+    "id":"70",
 "title":"LaVEX",
 "rating" :"Rating: Unrated" ,
 "description":"Dicklum, Manolo Fortich",
@@ -770,6 +840,7 @@
 
 
 {
+    "id":"71",
 "title":"Sea Fuel",
 "rating" :"Rating: Unrated" ,
 "description":"Damilag, Manolo Fortich",
@@ -781,6 +852,7 @@
 
 
 {
+    "id":"72",
 "title":"Seaoil",
 "rating" :"Rating: ★★★⯪✰ (3.9)" ,
 "description":"Tankulan, Manolo Fortich",
@@ -792,6 +864,7 @@
 
 
 {
+    "id":"73",
 "title":"Fuel Master",
 "rating" :"Rating: ★✰✰✰✰ (1.0)" ,
 "description":"Tankulan, Manolo Fortich",
@@ -803,6 +876,7 @@
 
 
 {
+    "id":"74",
 "title":"ECOOIL",
 "rating" :"Rating: Unrated" ,
 "description":"Alae, Manolo Fortich",
@@ -814,6 +888,7 @@
 
 
 {
+    "id":"75",
 "title":"JAPH FUEL",
 "rating" :"Rating: ★★★★★ (5.0)" ,
 "description":"Dalirig, Manolo Fortich",
@@ -825,6 +900,7 @@
 
 
 {
+    "id":"76",
 "title":"Colex",
 "rating" :"Rating: ★★★★⯪ (4.3)" ,
 "description":"Alae, Manolo Fortich",
@@ -836,6 +912,7 @@
 
 
 {
+    "id":"77",
 "title":"Wow Fuel",
 "rating" :"Rating: Unrated" ,
 "description":"Dahilayan, Manolo Fortich",
@@ -845,8 +922,7 @@
 "locationType":"Gas Station"
 },
 
-
-{
+{"id":"78",
 "title":"Dalirig Gas Station",
 "rating" :"Rating: ★★★★✰ (4.0)" ,
 "description":"Dalirig, Manolo Fortich",
@@ -859,6 +935,7 @@
 
 
 {
+    "id":"79",
 "title":"Golden Bliss Inn",
 "rating" :"Rating: ★★★★⯪ (4.3)" ,
 "description":"Dahilayan, Manolo Fortich",
@@ -871,6 +948,7 @@
 
 
 {
+    "id":"80",
 "title":"Migo's Inn",
 "rating" :"Rating: Unrated" ,
 "description":"Dahilayan, Manolo Fortich",
@@ -884,6 +962,7 @@
 
 
 {
+    "id":"81",
 "title":"Dahilayan De Eleganz Place",
 "rating" :"Rating: ★★★★★ (5.0)" ,
 "description":"Dahilayan, Manolo Fortich",
@@ -897,6 +976,7 @@
 
 
 {
+    "id":"82",
 "title":"Jejems Traveller's Inn",
 "rating" :"Rating: ★★★★⯪ (4.3)" ,
 "description":"Tankulan, Manolo Fortich",
@@ -909,6 +989,7 @@
 
 
 {
+    "id":"83",
 "title":"7/11",
 "rating" :"Rating: ★★★★⯪ (4.1)" ,
 "description":"Alae, Manolo Fortich",
@@ -917,6 +998,7 @@
 "lng": 124.81376373038319 ,
 "locationType":"Convenience Store"
 }
+
 
 
 ]

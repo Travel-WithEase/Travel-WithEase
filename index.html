@@ -38,16 +38,23 @@
      <div id="map"></div>
      </div>
         </div>
+        <div class="container mt-3">
+    <h2>Recommended Places</h2>
+    <div id="crCardList"></div>
+</div>
+
 </body>
 <script>
+    let map;
+    const markerMap={};
    function initMap(mapDataUrl) {
-    const map = L.map('map').setView([8.367481183366511, 124.86349857743643], 17);
+     map = L.map('map').setView([8.367481183366511, 124.86349857743643], 17);
 
     //OpenStreetMap Tile Layer
     const openStreetMap = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; OpenStreetMap contributors'
-    });
+    }).addTo(map);
 //satellite
     const satellite = L.tileLayer(
         'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', 
@@ -93,7 +100,14 @@ popupAnchor:[0,-38]
 fetch(mapDataUrl)
     .then(response => response.json())
     .then(data =>{
-         data.forEach(pin =>{
+       const filteredData = data.filter(pin => {
+    const match = pin.rating.match(/[\d.]+/);
+    if (!match) return false;
+    const ratingNumber = parseFloat(match[0]);
+    return ratingNumber >= 3;
+});
+
+filteredData.forEach(pin => {
             const type = pin.locationType || "Other";
 
             if(!markerGroups[type]) {
@@ -115,6 +129,7 @@ if (pin.locationType === "Gas Station") {
 }
 
        const marker = L.marker([pin.lat, pin.lng], { icon: selectedIcon }).addTo(map);
+       markerMap[pin.id] = marker;
             const img = `<img src='${pin.img}' class="popup-image">`;
             marker.bindPopup(`${img}<br><b> ${pin.title} </b><br> ${pin.description}<br> ${pin.locationType}<br>${pin.rating}`);
             console.log(`${pin.name} Loaded` +Date());
@@ -140,9 +155,8 @@ if (pin.locationType === "Gas Station") {
 
         
 }
-   document.addEventListener('DOMContentLoaded',()=> {
-        initMap('travel2.json');
-   });
+  
+ 
 
      const apiKey = "55f9a16fb9c7ec4188e6d189f64c7ea8";
 
@@ -179,5 +193,83 @@ if (pin.locationType === "Gas Station") {
             alert("Error: " + error.message);
             console.log("Error: " + error.message);
         }}
+//render cards
+       function renderCards(crDataUrl, containerId) {
+    fetch(crDataUrl)
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById(containerId);
+            container.innerHTML = "";
+
+            // Filter only ratings >= 4
+            const filteredData = data.filter(cr => {
+                const match = cr.rating.match(/[\d.]+/);
+                if (!match) return false;
+                const ratingNumber = parseFloat(match[0]);
+                return ratingNumber >= 3;
+            });
+
+            // Group cards by locationType
+            const groups = {};
+            filteredData.forEach(cr => {
+                const type = cr.locationType || "Other";
+                if (!groups[type]) groups[type] = [];
+                groups[type].push(cr);
+            });
+
+            // Render each group as a separate row
+            Object.keys(groups).forEach(type => {
+                const rowDiv = document.createElement('div');
+                rowDiv.className = 'category-row mb-4';
+
+                const heading = document.createElement('h3');
+                heading.textContent = type; // Category name
+                rowDiv.appendChild(heading);
+
+                const cardsContainer = document.createElement('div');
+                cardsContainer.className = 'd-flex flex-row flex-wrap gap-3';
+
+                groups[type].forEach(cr => {
+                    const cardHTML = `
+                        <div class="card" style="width: 18rem;" data-crid="${cr.id}">
+                            <img src="${cr.img}" class="card-img-top" alt="${cr.title}">
+                            <div class="card-body">
+                                <h5 class="card-title">${cr.title}</h5>
+                                <p class="card-text">${cr.rating}</p>
+                                <p class="card-text">${cr.description}</p>
+                            </div>
+                        </div>
+                    `;
+                    cardsContainer.innerHTML += cardHTML;
+                });
+
+                rowDiv.appendChild(cardsContainer);
+                container.appendChild(rowDiv);
+            });
+
+            // Add click event to fly to marker and scroll map
+            container.querySelectorAll('.card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const crID = card.getAttribute('data-crid');
+                    const marker = markerMap[crID];
+                    if(marker){
+                        document.getElementById('map').scrollIntoView({ behavior: 'smooth' });
+                        map.flyTo(marker.getLatLng(), 19, { duration: 0.5 });
+                        marker.openPopup();
+                    }
+                });
+            });
+        })
+        .catch(error => console.error("Error loading JSON:", error));
+}
+
+
+
+
+// Initialize on DOM ready
+document.addEventListener("DOMContentLoaded", () => {
+    initMap('travel2.json');
+    renderCards('travel2.json','crCardList');
+});
 </script>
-</html> 
+</html>     
